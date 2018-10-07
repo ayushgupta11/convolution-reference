@@ -11,11 +11,13 @@
 ### UI Libraries
 * https://alvarotrigo.com/fullPage/
 * https://daneden.github.io/animate.css/
+* https://www.w3schools.com/css/css3_flexbox.asp
 * https://quasar-framework.org/ (**Only if you use Vue.JS)
 * https://www.uplabs.com/ (UI Prototypes)
 
 ### Integrations
 * https://firebase.google.com/ (Easier Auth solution for Dashboarding)
+* https://www.npmjs.com/package/axios (AJAX calls to APIs)
 * http://www.passportjs.org/ (All OAuth2 Node Integration, I prefer firebase)
 * https://vuejs.org/ & https://vuex.vuejs.org/ (Best to use)
 
