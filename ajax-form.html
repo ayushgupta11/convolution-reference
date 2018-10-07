@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The XMLHttpRequest Object</h1>
+<div id="demo">
+
+
+
+<!--<button type="button"
+onclick="loadDoc('info.txt', myFunction)">Change Content
+</button>-->
+  <!--<select id="members"  onchange="loadDoc('form1.txt', myFunction)">
+    <option>-</option>
+    <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">4</option>
+     <option value="4">3</option>
+  </select>-->
+  <input type="radio" value="1"  onclick="loadDoc('form1.txt', myFunction)"> 1
+  <input type="radio" value="2"  onclick="loadDoc('form2.txt', myFunction)"> 2
+  <input type="radio" value="3"  onclick="loadDoc('form3.txt', myFunction)"> 3
+  <input type="radio" value="4"  onclick="loadDoc('form4.txt', myFunction)"> 4
+</div>
+
+<script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+</script>
+</body>
+</html>
